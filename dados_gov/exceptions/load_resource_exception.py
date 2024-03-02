@@ -1,0 +1,4 @@
+
+
+class LoadResourcesException(Exception):
+    pass

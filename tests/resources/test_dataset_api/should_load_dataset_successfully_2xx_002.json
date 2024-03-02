@@ -1,0 +1,18 @@
+{
+  "endpoint": "/dados/api/publico/conjuntos-dado/1b9ed187-70d0-4f92-be56-48be6b3d781c",
+  "params": {
+    "id": "1b9ed187-70d0-4f92-be56-48be6b3d781c"
+  },
+  "method": "GET",
+  "response_status_code": 200,
+  "response_headers": {
+    "content-type": "application/json"
+  },
+  "response_content": {
+    "id": "1b9ed187-70d0-4f92-be56-48be6b3d781c",
+    "title": "Plano Plurianual 2004-2007",
+    "nome": "plano-plurianual-2004-2007",
+    "dataAtualizacao": "14/10/2015 09:54:06",
+    "nomeOrganizacao": "ministerio-do-planejamento-e-orcamento"
+  }
+}

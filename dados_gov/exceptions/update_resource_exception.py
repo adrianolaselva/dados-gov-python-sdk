@@ -1,0 +1,4 @@
+
+
+class UpdateResourcesException(Exception):
+    pass

@@ -1,0 +1,4 @@
+
+
+class EditResourcesException(Exception):
+    pass

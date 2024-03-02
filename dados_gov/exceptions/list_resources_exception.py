@@ -1,0 +1,4 @@
+
+
+class ListResourcesException(Exception):
+    pass
