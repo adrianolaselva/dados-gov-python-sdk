@@ -16,7 +16,7 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
         self.dataset_api = DatasetApi(self.api_client)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_update_dataset_successfully_2xx_001.json",
+        "resources/test_dataset_api/should_update_dataset_successfully_2xx_001.json",
     ])
     def test_should_update_dataset_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)
@@ -38,7 +38,7 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
         self.assertEqual(payload_response, response.text)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_edit_dataset_successfully_2xx_001.json",
+        "resources/test_dataset_api/should_edit_dataset_successfully_2xx_001.json",
     ])
     def test_should_edit_dataset_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)
@@ -62,7 +62,7 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
         self.assertEqual(payload_response, response.text)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_create_dataset_successfully_2xx_001.json",
+        "resources/test_dataset_api/should_create_dataset_successfully_2xx_001.json",
     ])
     def test_should_create_dataset_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)
@@ -86,7 +86,7 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
         self.assertEqual(payload_response, response.text)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_delete_dataset_successfully_2xx_001.json",
+        "resources/test_dataset_api/should_delete_dataset_successfully_2xx_001.json",
     ])
     def test_should_delete_dataset_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)
@@ -106,8 +106,8 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
         self.assertEqual(payload_response, response.text)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_load_dataset_successfully_2xx_001.json",
-        f"resources/{__name__}/should_load_dataset_successfully_2xx_002.json",
+        "resources/test_dataset_api/should_load_dataset_successfully_2xx_001.json",
+        "resources/test_dataset_api/should_load_dataset_successfully_2xx_002.json",
     ])
     def test_should_load_dataset_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)
@@ -127,12 +127,12 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
         self.assertEqual(payload_response, response.text)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_list_datasets_successfully_2xx_001.json",
-        f"resources/{__name__}/should_list_datasets_successfully_2xx_002.json",
-        f"resources/{__name__}/should_list_datasets_successfully_2xx_003.json",
-        f"resources/{__name__}/should_list_datasets_successfully_2xx_004.json",
-        f"resources/{__name__}/should_list_datasets_successfully_2xx_005.json",
-        f"resources/{__name__}/should_list_datasets_successfully_2xx_006.json",
+        "resources/test_dataset_api/should_list_datasets_successfully_2xx_001.json",
+        "resources/test_dataset_api/should_list_datasets_successfully_2xx_002.json",
+        "resources/test_dataset_api/should_list_datasets_successfully_2xx_003.json",
+        "resources/test_dataset_api/should_list_datasets_successfully_2xx_004.json",
+        "resources/test_dataset_api/should_list_datasets_successfully_2xx_005.json",
+        "resources/test_dataset_api/should_list_datasets_successfully_2xx_006.json",
     ])
     def test_should_list_datasets_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)

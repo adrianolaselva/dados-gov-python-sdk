@@ -16,7 +16,7 @@ class TestRequestsApi(ApiResourcesTestCaseFixture):
         self.requests_api = RequestsApi(self.api_client)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_response_to_requests_successfully_2xx_001.json",
+        "resources/test_requests_api/should_response_to_requests_successfully_2xx_001.json",
     ])
     def test_should_response_to_requests_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)
@@ -36,7 +36,7 @@ class TestRequestsApi(ApiResourcesTestCaseFixture):
         self.assertEqual(payload_response, response.text)
 
     @parameterized.expand([
-        f"resources/{__name__}/should_list_requests_successfully_2xx_001.json",
+        "resources/test_requests_api/should_list_requests_successfully_2xx_001.json",
     ])
     def test_should_list_requests_successfully(self, content_path: str):
         content_text = HandleFileFixture.load_json_contents(content_path)

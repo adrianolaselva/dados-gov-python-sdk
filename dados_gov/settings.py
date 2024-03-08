@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 import os
 from dataclasses import dataclass
-from typing import Optional
 
 
 @dataclass
@@ -29,7 +28,7 @@ class Settings(object):
 
         proxy_http = os.environ.get("DATA_GOV_PROXY_HTTP", default=None)
         proxy_https = os.environ.get("DATA_GOV_PROXY_HTTPS", default=None)
-        
+
         self.proxies = dict()
         if proxy_http is not None:
             self.proxies['http'] = proxy_http
