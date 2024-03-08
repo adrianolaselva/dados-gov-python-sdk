@@ -1,5 +1,10 @@
 # REST API of the Brazilian Federal Government Open Data Portal
 
+[![Python package](https://github.com/adrianolaselva/dados-gov-python-sdk/actions/workflows/python-package.yml/badge.svg?branch=master)](https://github.com/adrianolaselva/dados-gov-python-sdk/actions/workflows/python-package.yml)
+[![codecov](https://codecov.io/github/adrianolaselva/dados-gov-python-sdk/graph/badge.svg?token=1JFRLT3ZLM)](https://codecov.io/github/adrianolaselva/dados-gov-python-sdk)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/dados-gov-sdk.svg)](https://pypi.org/project/dados-gov-sdk/) 
+[![PyPI Downloads](https://img.shields.io/pypi/dm/dados-gov-sdk.svg?label=PyPI%20downloads)](https://pypi.org/project/dados-gov-sdk/)
+
 dados.gov.br now manages the technological solution to improve the governance of federal investments in infrastructure, 
 through monitoring and monitoring the execution of investments in Federal Government infrastructure projects. 
 Optionally, other powers of the Union, States, Federal District and Municipalities may register investments in 
