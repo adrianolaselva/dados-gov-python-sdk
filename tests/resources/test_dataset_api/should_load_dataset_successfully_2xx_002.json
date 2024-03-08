@@ -1,5 +1,5 @@
 {
-  "endpoint": "/dados/api/publico/conjuntos-dado/1b9ed187-70d0-4f92-be56-48be6b3d781c",
+  "endpoint": "/dados/api/publico/conjuntos-dados/1b9ed187-70d0-4f92-be56-48be6b3d781c",
   "params": {
     "id": "1b9ed187-70d0-4f92-be56-48be6b3d781c"
   },
@@ -10,9 +10,10 @@
   },
   "response_content": {
     "id": "1b9ed187-70d0-4f92-be56-48be6b3d781c",
-    "title": "Plano Plurianual 2004-2007",
-    "nome": "plano-plurianual-2004-2007",
-    "dataAtualizacao": "14/10/2015 09:54:06",
-    "nomeOrganizacao": "ministerio-do-planejamento-e-orcamento"
+    "titulo": "Dados coletados no Perfil de Governança de TI",
+    "organizacao": "dados-coletados-no-perfil-de-governanca-de-ti",
+    "inventario": 0,
+    "coberturaTemporalInicio": "2015-06-03",
+    "coberturaTemporalFim": "2015-10-03"
   }
 }

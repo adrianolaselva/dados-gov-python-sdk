@@ -6,19 +6,21 @@
     "content-type": "application/json"
   },
   "response_content": [
-    {
+   {
       "id": "e668f214-e24a-4eda-b0b6-3c73765615d3",
-      "title": "Dados coletados no Perfil de Governança de TI",
-      "nome": "dados-coletados-no-perfil-de-governanca-de-ti",
-      "dataAtualizacao": "03/06/2015 10:34:17",
-      "nomeOrganizacao": "tribunal-de-contas-da-uniao-tcu"
+      "titulo": "Dados coletados no Perfil de Governança de TI",
+      "organizacao": "dados-coletados-no-perfil-de-governanca-de-ti",
+      "inventario": 0,
+      "coberturaTemporalInicio": "2015-06-03",
+      "coberturaTemporalFim": "2015-10-03"
     },
     {
       "id": "1b9ed187-70d0-4f92-be56-48be6b3d781c",
-      "title": "Plano Plurianual 2004-2007",
-      "nome": "plano-plurianual-2004-2007",
-      "dataAtualizacao": "14/10/2015 09:54:06",
-      "nomeOrganizacao": "ministerio-do-planejamento-e-orcamento"
+      "titulo": "Plano Plurianual 2004-2007",
+      "organizacao": "plano-plurianual-2004-2007",
+      "inventario": 0,
+      "coberturaTemporalInicio": "2015-06-03",
+      "coberturaTemporalFim": "2015-10-03"
     }
   ]
 }

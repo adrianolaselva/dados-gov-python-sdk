@@ -9,12 +9,12 @@ class DatasetApi(object):
 
     def update(self, uuid: str, content: DatasetModel, **kwargs) -> HttpResponse:
         return self._api_client.request(method='PUT',
-                                        endpoint=f'/dados/api/publico/conjuntos-dado/{uuid}',
+                                        endpoint=f'/dados/api/publico/conjuntos-dados/{uuid}',
                                         content=content, **kwargs)
 
     def edit(self, uuid: str, content: DatasetModel, **kwargs) -> HttpResponse:
         return self._api_client.request(method='PATCH',
-                                        endpoint=f'/dados/api/publico/conjuntos-dado/{uuid}',
+                                        endpoint=f'/dados/api/publico/conjuntos-dados/{uuid}',
                                         content=content, **kwargs)
 
     def create(self, content: DatasetModel, **kwargs) -> HttpResponse:
@@ -24,12 +24,12 @@ class DatasetApi(object):
 
     def delete(self, uuid: str, **kwargs) -> HttpResponse:
         return self._api_client.request(method='DELETE',
-                                        endpoint=f'/dados/api/publico/conjuntos-dado/{uuid}',
+                                        endpoint=f'/dados/api/publico/conjuntos-dados/{uuid}',
                                         **kwargs)
 
     def load(self, uuid: str, **kwargs) -> HttpResponse:
         return self._api_client.request(method='GET',
-                                        endpoint=f'/dados/api/publico/conjuntos-dado/{uuid}',
+                                        endpoint=f'/dados/api/publico/conjuntos-dados/{uuid}',
                                         **kwargs)
 
     def list(self,

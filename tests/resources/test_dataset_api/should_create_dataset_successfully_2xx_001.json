@@ -3,11 +3,11 @@
   "method": "POST",
   "request_content": {
     "id": "e668f214-e24a-4eda-b0b6-3c73765615d3",
-    "title": "Dados coletados no Perfil de Governança de TI",
-    "nome": "dados-coletados-no-perfil-de-governanca-de-ti",
-    "notes": "notes",
-    "dataAtualizacao": "03/06/2015 10:34:17",
-    "nomeOrganizacao": "tribunal-de-contas-da-uniao-tcu"
+    "titulo": "Dados coletados no Perfil de Governança de TI",
+    "organizacao": "dados-coletados-no-perfil-de-governanca-de-ti",
+    "inventario": 0,
+    "coberturaTemporalInicio": "2015-06-03",
+    "coberturaTemporalFim": "2015-10-03"
   },
   "response_status_code": 201,
   "response_headers": {
@@ -15,10 +15,10 @@
   },
   "response_content": {
     "id": "e668f214-e24a-4eda-b0b6-3c73765615d3",
-    "title": "Dados coletados no Perfil de Governança de TI",
-    "nome": "dados-coletados-no-perfil-de-governanca-de-ti",
-    "notes": "notes",
-    "dataAtualizacao": "03/06/2015 10:34:17",
-    "nomeOrganizacao": "tribunal-de-contas-da-uniao-tcu"
+    "titulo": "Dados coletados no Perfil de Governança de TI",
+    "organizacao": "dados-coletados-no-perfil-de-governanca-de-ti",
+    "inventario": 0,
+    "coberturaTemporalInicio": "2015-06-03",
+    "coberturaTemporalFim": "2015-10-03"
   }
 }
