@@ -1,0 +1,26 @@
+{
+  "endpoint": "/dados/api/recurso/salvar",
+  "method": "POST",
+  "request_content": {
+    "id": "e668f214-e24a-4eda-b0b6-3c73765615d3",
+    "idConjuntoDados": "e668f214-e24a-4eda-b0b6-3c7376561599",
+    "titulo": "Dados coletados titulo",
+    "link": "https://...",
+    "descricao": "Dados coletados descrição",
+    "tipo": "INVALIDO",
+    "formato": "formato"
+  },
+  "response_status_code": 201,
+  "response_headers": {
+    "content-type": "application/json"
+  },
+  "response_content": {
+    "id": "e668f214-e24a-4eda-b0b6-3c73765615d3",
+    "idConjuntoDados": "e668f214-e24a-4eda-b0b6-3c7376561599",
+    "titulo": "Dados coletados titulo",
+    "link": "https://...",
+    "descricao": "Dados coletados descrição",
+    "tipo": "INVALIDO",
+    "formato": "formato"
+  }
+}

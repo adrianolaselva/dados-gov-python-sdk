@@ -1,6 +1,7 @@
 import json
 import unittest
 import urllib.parse
+from datetime import datetime
 
 from parameterized import parameterized
 
@@ -28,9 +29,9 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
                                   headers=content_text['response_headers'],
                                   text=payload_response)
 
-        response = self.dataset_api.update(content_text['request_content']['id'], DatasetModel(
-            id=content_text['request_content']['id'],
-            title=content_text['request_content']['title']))
+        response = self.dataset_api.update(content_text['request_content']['id'],
+                                           DatasetModel(id=content_text['request_content']['id'],
+                                                        tittle=content_text['request_content']['titulo']))
 
         self.assertEqual(content_text['response_status_code'], response.status_code)
         self.assertDictEqual(content_text['response_headers'], response.headers)
@@ -50,11 +51,17 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
                                   headers=content_text['response_headers'],
                                   text=payload_response)
 
-        response = self.dataset_api.edit(content_text['request_content']['id'], DatasetModel(
-            id=content_text['request_content']['id'],
-            title=content_text['request_content']['id'],
-            notes=content_text['request_content']['notes'],
-            data_hora_atualizacao=content_text['request_content']['dataAtualizacao']))
+        date_start_temporal_coverage = datetime.strptime(content_text['request_content']['coberturaTemporalInicio'],
+                                                         "%Y-%m-%d")
+        date_end_temporal_coverage = datetime.strptime(content_text['request_content']['coberturaTemporalFim'],
+                                                       "%Y-%m-%d")
+
+        response = self.dataset_api.edit(content_text['request_content']['id'],
+                                         DatasetModel(id=content_text['request_content']['id'],
+                                                      tittle=content_text['request_content']['titulo'],
+                                                      organization=content_text['request_content']['organizacao'],
+                                                      date_start_temporal_coverage=date_start_temporal_coverage,
+                                                      date_end_temporal_coverage=date_end_temporal_coverage))
 
         self.assertEqual(content_text['response_status_code'], response.status_code)
         self.assertDictEqual(content_text['response_headers'], response.headers)
@@ -74,11 +81,17 @@ class TestDatasetApi(ApiResourcesTestCaseFixture):
                                   headers=content_text['response_headers'],
                                   text=payload_response)
 
+        date_start_temporal_coverage = datetime.strptime(content_text['request_content']['coberturaTemporalInicio'],
+                                                         "%Y-%m-%d")
+        date_end_temporal_coverage = datetime.strptime(content_text['request_content']['coberturaTemporalFim'],
+                                                       "%Y-%m-%d")
+
         response = self.dataset_api.create(DatasetModel(
             id=content_text['request_content']['id'],
-            title=content_text['request_content']['id'],
-            notes=content_text['request_content']['notes'],
-            data_hora_atualizacao=content_text['request_content']['dataAtualizacao']))
+            tittle=content_text['request_content']['titulo'],
+            organization=content_text['request_content']['organizacao'],
+            date_start_temporal_coverage=date_start_temporal_coverage,
+            date_end_temporal_coverage=date_end_temporal_coverage))
 
         self.assertEqual(content_text['response_status_code'], response.status_code)
         self.assertDictEqual(content_text['response_headers'], response.headers)

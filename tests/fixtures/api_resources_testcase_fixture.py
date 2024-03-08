@@ -3,7 +3,6 @@ import unittest
 import requests_mock
 
 from dados_gov import Settings, ApiClient
-from tests import ROOT_DIR_TESTS
 
 
 class ApiResourcesTestCaseFixture(unittest.TestCase):
