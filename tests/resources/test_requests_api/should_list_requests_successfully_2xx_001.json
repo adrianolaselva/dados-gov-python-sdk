@@ -1,0 +1,52 @@
+{
+  "endpoint": "/dados/api/solicitacoes",
+  "method": "GET",
+  "request_content": {
+    "dataAbertura": "2024-03-08",
+    "tipoSolicitacao": "CONTATO_ORGANIZACAO",
+    "statusSolicitacao": "ABERTA"
+  },
+  "response_status_code": 201,
+  "response_headers": {
+    "content-type": "application/json"
+  },
+  "response_content": [
+    {
+      "id": 0,
+      "idOrganizacao": "string",
+      "organizacao": "string",
+      "idAtividade": 0,
+      "atividade": "string",
+      "idUsuarioAbertura": 0,
+      "usuarioAbertura": "string",
+      "email": "string",
+      "descricao": "string",
+      "idTipoSolicitacao": 0,
+      "tipoSolicitacao": "string",
+      "idStatusSolicitacao": 0,
+      "statusSolicitacao": "string",
+      "idUsuarioRespondente": 0,
+      "usuarioRespondente": "string",
+      "resposta": "string",
+      "dataAbertura": "2024-03-08T12:09:04.153Z",
+      "dataResposta": "2024-03-08T12:09:04.153Z",
+      "arquivoSolicitacao": {
+        "nomeArquivo": "string",
+        "conteudo": "string"
+      },
+      "arquivoResposta": {
+        "nomeArquivo": "string",
+        "conteudo": "string"
+      },
+      "uuidArquivoSolicitacao": "string",
+      "uuidArquivoResposta": "string",
+      "podeEditar": true,
+      "possuiArquivoSolicitacao": true,
+      "possuiArquivoResposta": true,
+      "idConjuntoDados": "string",
+      "conjuntoDados": "string",
+      "idReuso": 0,
+      "nomeReuso": "string"
+    }
+  ]
+}

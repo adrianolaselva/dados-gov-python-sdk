@@ -1,0 +1,15 @@
+{
+  "endpoint": "/dados/api/solicitacoes/resposta",
+  "method": "POST",
+  "request_content": {
+    "idSolicitacao": "e668f214-e24a-4eda-b0b6-3c73765615d3",
+    "resposta": "Resposta Solicitação Admin"
+  },
+  "response_status_code": 200,
+  "response_headers": {
+    "content-type": "application/json"
+  },
+  "response_content": {
+
+  }
+}
